@@ -1,0 +1,18 @@
+{
+  "Hello": "สวัสดี",
+  "Shape": "เรขาคณิต",
+  "Prefix": "คำนำหน้า",
+  "FirstName": "ชื่อ",
+  "LastName": "นามสกุล",
+  "Birthday": "วันเกิด",
+  "Nationality": "สัญชาติ",
+  "IDCardNumber": "เลขบัตรประชาชน",
+  "Gender": "เพศ",
+  "PhoneNumber": "เบอร์",
+  "Passport": "สมุดเดินทาง",
+  "ExpectedSalary": "เงินเดือนที่คาดหวัง",
+  "Age": "อายุ",
+  "Information": "ข้อมูล",
+  "Action": "จัดการ",
+  "Name": "ชื่อ"
+}

@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// src/App.tsx
+import React, { useState } from "react";
+import { Button, Layout, Switch } from "antd";
+import LanguageSwitcherButton from "./components/LanguageSwitcherButton";
+import PersonForm from "./components/PersonForm";
+import PersonList from "./components/PersonList";
+import { Divider, Space, Typography } from 'antd';
+import './shape.css';
+import infomation from './pages/infomation';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { changeLanguage } from "i18next";
+import './i18n';
+import ReactDOM from "react-dom";
+import { translate } from "react-i18nify";
 
-function App() {
+const { Content } = Layout;
+
+
+const App: React.FC = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Content
+        style={{
+          padding: "50px",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ marginRight: "auto" }}>
+        </div>
+        <LanguageSwitcherButton />
+      </Content>
+    </Layout>
+  
   );
-}
+};
 
 export default App;
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);

@@ -1,0 +1,18 @@
+{
+  "Hello": "Hello",
+  "Shape": "Shape",
+  "Prefix": "Prefix",
+  "FirstName": "FirstName",
+  "LastName": "LastName",
+  "Birthday": "Birthday",
+  "Nationality": "Nationality",
+  "IDCardNumber": "IDCardNumber",
+  "Gender": "Gender",
+  "PhoneNumber": "PhoneNumber",
+  "Passport": "Passport",
+  "ExpectedSalary": "ExpectedSalary",
+  "Age": "Age",
+  "Information": "Information",
+  "Action": "Action",
+  "Name": "Name"
+}

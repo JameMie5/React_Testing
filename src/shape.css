@@ -1,0 +1,265 @@
+.shape-container {
+  display: flex;
+}
+.contanier {
+  display: flex;
+}
+
+.triangleRigth {
+  width: 0;
+  height: 0;
+  border-left: 98px solid rgb(0, 0, 0); /* เปลี่ยน border-left */
+  border-top: 50px solid transparent; /* เปลี่ยน border-top */
+  border-bottom: 50px solid transparent; /* เปลี่ยน border-bottom */
+}
+.triangleLeft {
+  width: 0;
+  height: 0;
+  border-right: 98px solid rgb(0, 0, 0); /* เปลี่ยน border-right */
+  border-top: 50px solid transparent; /* เปลี่ยน border-top */
+  border-bottom: 50px solid transparent; /* เปลี่ยน border-bottom */
+}
+.triangleUp {
+  width: 0;
+  height: 0;
+  border-top: 98px solid rgb(0, 0, 0); /* เปลี่ยน border-top */
+  border-left: 50px solid transparent; /* เปลี่ยน border-left */
+  border-right: 50px solid transparent; /* เปลี่ยน border-right */
+}
+.triangleDown {
+  width: 0;
+  height: 0;
+  border-bottom: 98px solid rgb(0, 0, 0); /* เปลี่ยน border-bottom */
+  border-left: 50px solid transparent; /* เปลี่ยน border-left */
+  border-right: 50px solid transparent; /* เปลี่ยน border-right */
+}
+
+.shape-container{
+  padding: 50px;
+  justify-content: center;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, auto); /* สร้าง 4 คอลัมน์ขนาดเท่ากัน */
+  gap: 100px; /* กำหนดระยะห่างระหว่างตัวองค์ประกอบเป็น 10px */
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+}
+
+.rhombus {
+  width: 100px;
+  height: 100px;
+  background-color: peru; /* สีสี่เหลี่ยมขนมเปียกปูน */
+  position: relative;
+  transform: rotate(45deg); /* หมุนทรง 45 องศา */
+  margin: 0 5px; /* เว้นระยะห่าง 5px */
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* จัดให้อยู่ตรงกลางในทุกๆ ส่วน */
+}
+
+.ant-tabs-tab {
+  /* เพิ่มขนาดให้แท็บใหญ่ขึ้น */
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+}
+
+.pentagon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  transform: rotate(36deg);
+}
+
+.pentagon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #007bff;
+}
+
+/* Hexagon */
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background-color: #007bff;
+  position: relative;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+  top: -25px;
+  border-bottom: 25px solid #007bff;
+}
+
+.hexagon:after {
+  bottom: -25px;
+  border-top: 25px solid #007bff;
+}
+
+/* Octagon */
+.octagon {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  position: relative;
+}
+
+.octagon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 29px solid #007bff;
+  border-left: 29px solid transparent;
+  border-right: 29px solid transparent;
+  width: 42px;
+  height: 0;
+}
+
+.octagon:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 29px solid #007bff;
+  border-left: 29px solid transparent;
+  border-right: 29px solid transparent;
+  width: 42px;
+  height: 0;
+}
+
+/* Star */
+.star {
+  margin-left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #000000;
+  position: relative;
+}
+
+
+
+/* Heart */
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background-color: #000000;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/* Rectangle */
+.rectangle {
+  width: 150px;
+  height: 100px;
+  background-color: #000000;
+}
+
+/* Pentagon */
+.pentagon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+  transform: rotate(36deg);
+}
+
+.pentagon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #000000;
+}
+
+/* Circle */
+.circl {
+  width: 200px;
+  height: 100px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+/* Cone */
+.cone {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #000000;
+  border-radius: 50%;
+}
+
+.cone:before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #000000;
+}
+
+
+
+
+
+
